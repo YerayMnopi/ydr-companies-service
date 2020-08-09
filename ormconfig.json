@@ -1,0 +1,17 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "1aragon1",
+  "database": "companies",
+  "entities": ["./dist/**/*.entity.js"],
+  "synchronize": false,
+  "migrations": ["./dist/migrations/**/*.js"],
+  "subscribers": ["./dist/subscriber/**/.js"],
+  "cli": {
+    "entitiesDir": "src",
+    "migrationsDir": "migrations",
+    "subscribersDir": "subscriber"
+  }
+}
